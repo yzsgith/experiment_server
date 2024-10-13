@@ -1,0 +1,15 @@
+const serverless = require('serverless-http');
+const app=require("@/app.js")
+
+// const express = require('express');
+
+// const app = express();
+
+
+// app.use(/* register your middleware as normal */);
+
+// const handler = serverless(app, { provider: 'azure' });
+// module.exports.funcName = async (context, req) => {
+//   context.res = await handler(context, req);
+// }
+export const handler = serverless(app)
