@@ -1,7 +1,7 @@
 [build]
   base = "/"
   command = "echo 'fuck'"
-  publish = "/dist1/"
+  publish = "/dist/"
   [build.environment]
     NODE_VERSION = "18"
 [functions]
