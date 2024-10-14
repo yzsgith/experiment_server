@@ -1,3 +1,9 @@
+[build]
+  base = "/"
+  command = "echo 'fuck'"
+  publish = "/dist1/"
+  [build.environment]
+    NODE_VERSION = "18"
 [functions]
   external_node_modules = ["express"]
   node_bundler = "esbuild"

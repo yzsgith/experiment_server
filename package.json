@@ -2,9 +2,13 @@
   "name": "experiment-server",
   "version": "0.0.0",
   "private": true,
+  "engines": {
+    "node": "20.11.1"
+  },
   "scripts": {
     "start": "node ./bin/www",
-    "devstart": "set DEBUG=express-locallibrary-tutorial:*  && nodemon node ./bin/www"
+    "devstart": "set DEBUG=express-locallibrary-tutorial:*  && nodemon node ./bin/www",
+    "build": "echo 'hello worod' "
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -13,6 +17,7 @@
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "morgan": "~1.9.1",
+    "netlify-lambda": "^2.0.16",
     "serverless-http": "^3.2.0"
   }
 }
